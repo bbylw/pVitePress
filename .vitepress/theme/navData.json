@@ -1,0 +1,923 @@
+[
+  {
+    "id": "ai-search",
+    "title": "Ai搜索",
+    "items": [
+      {
+        "name": "智谱清言",
+        "link": "https://chatglm.cn/",
+        "icon": "fa-solid fa-comment-dots"
+      },
+      {
+        "name": "mimo小米AI",
+        "link": "https://mimo.xiaomi.com/",
+        "icon": "fa-solid fa-mobile-retro"
+      },
+      {
+        "name": "openrouter",
+        "link": "https://openrouter.ai/",
+        "icon": "fa-brands fa-openid"
+      },
+      {
+        "name": "千问国内版",
+        "link": "https://www.qianwen.com/",
+        "icon": "fa-solid fa-magnifying-glass"
+      },
+      {
+        "name": "chatgpt",
+        "link": "https://chatgpt.com/",
+        "icon": "fa-brands fa-google"
+      },
+      {
+        "name": "豆包",
+        "link": "https://www.doubao.com/chat/",
+        "icon": "fa-solid fa-paw"
+      },
+      {
+        "name": "扣子空间",
+        "link": "https://space.coze.cn/",
+        "icon": "fa-solid fa-shuttle-space"
+      },
+      {
+        "name": "通义千问",
+        "link": "https://chat.qwen.ai/",
+        "icon": "fa-brands fa-rocketchat"
+      },
+      {
+        "name": "kimi",
+        "link": "https://kimi.moonshot.cn/",
+        "icon": "fa-regular fa-moon"
+      },
+      {
+        "name": "文心一言",
+        "link": "https://yiyan.baidu.com/",
+        "icon": "fa-solid fa-dumpster-fire"
+      },
+      {
+        "name": "腾讯混元",
+        "link": "https://hunyuan.tencent.com/",
+        "icon": "fa-solid fa-robot"
+      },
+      {
+        "name": "minimax",
+        "link": "https://www.minimax.io/",
+        "icon": "fa-solid fa-minimize"
+      },
+      {
+        "name": "z.ai",
+        "link": "https://chat.z.ai/",
+        "icon": "fa-solid fa-z"
+      },
+      {
+        "name": "google AIstudio",
+        "link": "https://aistudio.google.com/",
+        "icon": "fa-solid fa-robot"
+      },
+      {
+        "name": "gemini",
+        "link": "https://gemini.google.com/",
+        "icon": "fa-brands fa-google-plus"
+      },
+      {
+        "name": "labs.google",
+        "link": "https://labs.google/fx/zh",
+        "icon": "fa-brands fa-google-plus"
+      },
+      {
+        "name": "jules.google",
+        "link": "https://jules.google.com/",
+        "icon": "fa-brands fa-google-plus"
+      },
+      {
+        "name": "stitch.withgoogle",
+        "link": "https://stitch.withgoogle.com/",
+        "icon": "fa-brands fa-square-google-plus"
+      },
+      {
+        "name": "copilot",
+        "link": "https://copilot.microsoft.com/",
+        "icon": "fa-brands fa-windows"
+      },
+      {
+        "name": "nvidia",
+        "link": "https://build.nvidia.com/",
+        "icon": "fa-solid fa-microchip"
+      },
+      {
+        "name": "modal",
+        "link": "https://modal.com/",
+        "icon": "fa-solid fa-robot"
+      },
+      {
+        "name": "firecrawl",
+        "link": "https://www.firecrawl.dev/",
+        "icon": "fa-solid fa-robot"
+      },
+      {
+        "name": "mistral",
+        "link": "https://mistral.ai/",
+        "icon": "fa-solid fa-brain"
+      },
+      {
+        "name": "groq",
+        "link": "https://groq.com/",
+        "icon": "fa-solid fa-group-arrows-rotate"
+      },
+      {
+        "name": "medscape",
+        "link": "https://www.medscape.com/",
+        "icon": "fa-solid fa-stethoscope"
+      },
+      {
+        "name": "ollama",
+        "link": "https://ollama.com/",
+        "icon": "fa-brands fa-rocketchat"
+      },
+      {
+        "name": "zenmux",
+        "link": "https://zenmux.ai/",
+        "icon": "fa-solid fa-mask"
+      },
+      {
+        "name": "chutes.ai",
+        "link": "https://chutes.ai/",
+        "icon": "fa-solid fa-chalkboard"
+      },
+      {
+        "name": "huggingface",
+        "link": "https://huggingface.co/",
+        "icon": "fa-solid fa-face-rolling-eyes"
+      },
+      {
+        "name": "lmarena",
+        "link": "https://lmarena.ai/",
+        "icon": "fa-solid fa-robot"
+      },
+      {
+        "name": "anyrouter",
+        "link": "https://anyrouter.top/",
+        "icon": "fa-solid fa-robot"
+      },
+      {
+        "name": "codemirror",
+        "link": "https://api.codemirror.codes/",
+        "icon": "fa-brands fa-codepen"
+      },
+      {
+        "name": "x.ai",
+        "link": "https://x.ai/",
+        "icon": "fa-brands fa-x-twitter"
+      },
+      {
+        "name": "pce计算",
+        "link": "https://ascvdpce.186404.xyz/",
+        "icon": "fa-solid fa-heart-pulse"
+      },
+      {
+        "name": "agnes-ai",
+        "link": "https://agnes-ai.com/",
+        "icon": "fa-solid fa-code"
+      },
+      {
+        "name": "v0",
+        "link": "https://v0.dev/",
+        "icon": "fa-solid fa-v"
+      },
+      {
+        "name": "cto.new",
+        "link": "https://cto.new/",
+        "icon": "fa-solid fa-v"
+      },
+      {
+        "name": "deepseek",
+        "link": "https://www.deepseek.com/",
+        "icon": "fa-brands fa-rocketchat"
+      },
+      {
+        "name": "百小应医疗大模型",
+        "link": "https://ying.baichuan-ai.com/",
+        "icon": "fa-brands fa-rocketchat"
+      },
+      {
+        "name": "genspark.ai",
+        "link": "https://www.genspark.ai/",
+        "icon": "fa-brands fa-rocketchat"
+      },
+      {
+        "name": "firebase.google",
+        "link": "https://firebase.google.com/",
+        "icon": "fa-solid fa-code-branch"
+      },
+      {
+        "name": "kiro.dev",
+        "link": "https://kiro.dev/",
+        "icon": "fa-solid fa-code"
+      },
+      {
+        "name": "iflow",
+        "link": "https://vibex.iflow.cn/",
+        "icon": "fa-solid fa-code"
+      },
+      {
+        "name": "streamlake.ai",
+        "link": "https://www.streamlake.ai/",
+        "icon": "fa-solid fa-code"
+      },
+      {
+        "name": "codebuff",
+        "link": "https://www.codebuff.com/",
+        "icon": "fa-solid fa-robot"
+      },
+      {
+        "name": "ampcode",
+        "link": "https://ampcode.com/",
+        "icon": "fa-solid fa-code"
+      },
+      {
+        "name": "硅基流动",
+        "link": "https://siliconflow.cn/",
+        "icon": "fa-brands fa-confluence"
+      },
+      {
+        "name": "魔塔社区",
+        "link": "https://www.modelscope.cn/",
+        "icon": "fa-solid fa-code-branch"
+      },
+      {
+        "name": "讯飞星辰MaaS",
+        "link": "https://maas.xfyun.cn/",
+        "icon": "fa-solid fa-bolt"
+      },
+      {
+        "name": "youmind",
+        "link": "https://youmind.com/",
+        "icon": "fa-solid fa-camera"
+      },
+      {
+        "name": "lovart",
+        "link": "https://www.lovart.ai/zh/home",
+        "icon": "fa-solid fa-file-image"
+      },
+      {
+        "name": "bolt.new",
+        "link": "https://bolt.new/",
+        "icon": "fa-solid fa-bolt"
+      }
+    ]
+  },
+  {
+    "id": "social",
+    "title": "社交媒体",
+    "items": [
+      {
+        "name": "Facebook",
+        "link": "https://www.facebook.com",
+        "icon": "fa-brands fa-facebook"
+      },
+      {
+        "name": "Twitter",
+        "link": "https://x.com/",
+        "icon": "fa-brands fa-twitter"
+      },
+      {
+        "name": "推特视频下载",
+        "link": "https://twitterxz.com/",
+        "icon": "fa-brands fa-x-twitter"
+      },
+      {
+        "name": "Instagram",
+        "link": "https://www.instagram.com",
+        "icon": "fa-brands fa-instagram"
+      },
+      {
+        "name": "render",
+        "link": "https://render.com/",
+        "icon": "fa-solid fa-draw-polygon"
+      },
+      {
+        "name": "deno",
+        "link": "https://deno.com/deploy",
+        "icon": "fa-solid fa-d"
+      },
+      {
+        "name": "railway",
+        "link": "https://railway.com/",
+        "icon": "fa-solid fa-archway"
+      },
+      {
+        "name": "vercel",
+        "link": "https://vercel.com/",
+        "icon": "fa-solid fa-v"
+      },
+      {
+        "name": "netlify",
+        "link": "https://www.netlify.com/",
+        "icon": "fa-brands fa-n"
+      },
+      {
+        "name": "savefrom",
+        "link": "https://zh.savefrom.net/",
+        "icon": "fa-solid fa-share-from-square"
+      },
+      {
+        "name": "爆米花视频",
+        "link": "https://goingbus.com/",
+        "icon": "fa-brands fa-n"
+      },
+      {
+        "name": "Reddit",
+        "link": "https://www.reddit.com",
+        "icon": "fa-brands fa-reddit"
+      },
+      {
+        "name": "油管字幕下载",
+        "link": "https://www.downloadyoutubesubtitles.com/",
+        "icon": "fa-brands fa-youtube"
+      },
+      {
+        "name": "GitHub",
+        "link": "https://github.com/",
+        "icon": "fa-brands fa-github"
+      },
+      {
+        "name": "油管视频下载",
+        "link": "https://www.y2mate.com/",
+        "icon": "fa-solid fa-download"
+      },
+      {
+        "name": "视频下载",
+        "link": "https://youtube.iiilab.com/",
+        "icon": "fa-solid fa-download"
+      },
+      {
+        "name": "suno",
+        "link": "https://suno.com/",
+        "icon": "fa-solid fa-music"
+      },
+      {
+        "name": "电影导航",
+        "link": "https://mv.186404.xyz/",
+        "icon": "fa-solid fa-tv"
+      }
+    ]
+  },
+  {
+    "id": "tools",
+    "title": "实用工具",
+    "items": [
+      {
+        "name": "MockAddress地址生成器",
+        "link": "https://mockaddress.com/",
+        "icon": "fa-solid fa-location-dot"
+      },
+      {
+        "name": "privatebin在线粘贴板",
+        "link": "https://privatebin.net/",
+        "icon": "fa-solid fa-link"
+      },
+      {
+        "name": "dynv6",
+        "link": "https://dynv6.com/",
+        "icon": "fa-solid fa-network-wired"
+      },
+      {
+        "name": "网速测试",
+        "link": "https://fast.com/",
+        "icon": "fa-solid fa-gauge-high"
+      },
+      {
+        "name": "Cloudns",
+        "link": "https://www.cloudns.net/",
+        "icon": "fa-solid fa-cloud"
+      },
+      {
+        "name": "Cloudflare",
+        "link": "https://www.cloudflare.com/zh-cn/",
+        "icon": "fa-solid fa-shield-halved"
+      },
+      {
+        "name": "一个朋友",
+        "link": "https://ygpy.net/",
+        "icon": "fa-solid fa-user-group"
+      },
+      {
+        "name": "谷歌笔记",
+        "link": "https://notebooklm.google/",
+        "icon": "fa-solid fa-book"
+      },
+      {
+        "name": "SenseNova Studio信息图",
+        "link": "https://unify.light-ai.top/",
+        "icon": "fa-solid fa-envelope"
+      },
+      {
+        "name": "vercel-drop",
+        "link": "https://vercel.com/drop",
+        "icon": "fa-solid fa-droplet"
+      },
+      {
+        "name": "IP查询",
+        "link": "https://ip.sb/",
+        "icon": "fa-solid fa-location-dot"
+      },
+      {
+        "name": "dns.he域名托管",
+        "link": "https://dns.he.net/",
+        "icon": "fa-solid fa-network-wired"
+      },
+      {
+        "name": "Site域名转发",
+        "link": "https://www.site.ac/",
+        "icon": "fa-solid fa-right-left"
+      },
+      {
+        "name": "Z-Library",
+        "link": "https://zh.go-to-library.sk/",
+        "icon": "fa-solid fa-book-reader"
+      },
+      {
+        "name": "us.kg域名",
+        "link": "https://domain.digitalplat.org/",
+        "icon": "fa-solid fa-globe"
+      },
+      {
+        "name": "Spaceship廉价域名",
+        "link": "https://www.spaceship.com/zh/",
+        "icon": "fa-solid fa-rocket"
+      },
+      {
+        "name": "namecheap廉价域名",
+        "link": "https://www.namecheap.com/",
+        "icon": "fa-solid fa-rocket"
+      },
+      {
+        "name": "racknerd",
+        "link": "https://www.racknerd.com/",
+        "icon": "fa-solid fa-server"
+      },
+      {
+        "name": "FontAwesome图标",
+        "link": "https://fontawesome.com/",
+        "icon": "fa-solid fa-icons"
+      },
+      {
+        "name": "logosvg",
+        "link": "https://worldvectorlogo.com/",
+        "icon": "fa-regular fa-font-awesome"
+      },
+      {
+        "name": "ip清洁度查询",
+        "link": "https://scamalytics.com/",
+        "icon": "fa-solid fa-icons"
+      },
+      {
+        "name": "test-ipv6",
+        "link": "https://test-ipv6.com/",
+        "icon": "fa-solid fa-ethernet"
+      },
+      {
+        "name": "zone/ip",
+        "link": "https://html.zone/ip",
+        "icon": "fa-brands fa-sourcetree"
+      },
+      {
+        "name": "免费网络代理",
+        "link": "https://www.lumiproxy.com/zh-hans/online-proxy/proxysite/",
+        "icon": "fa-solid fa-unlock"
+      },
+      {
+        "name": "ipcheck",
+        "link": "https://ipcheck.ing/",
+        "icon": "fa-solid fa-location-dot"
+      },
+      {
+        "name": "定时任务cron-job",
+        "link": "https://console.cron-job.org/",
+        "icon": "fa-solid fa-ethernet"
+      },
+      {
+        "name": "uptimerobot",
+        "link": "https://uptimerobot.com/",
+        "icon": "fa-solid fa-location-dot"
+      },
+      {
+        "name": "forwardemail",
+        "link": "https://forwardemail.net/",
+        "icon": "fa-solid fa-envelopes-bulk"
+      },
+      {
+        "name": "improvmx",
+        "link": "https://improvmx.com/",
+        "icon": "fa-solid fa-envelopes-bulk"
+      },
+      {
+        "name": "objectremover去水印",
+        "link": "https://www.objectremover.com/",
+        "icon": "fa-solid fa-object-group"
+      },
+      {
+        "name": "hostryDNS域名托管",
+        "link": "https://hostry.com/",
+        "icon": "fa-solid fa-clock-rotate-left"
+      },
+      {
+        "name": "免费域名sitelutions",
+        "link": "https://www.sitelutions.com/",
+        "icon": "fa-solid fa-sitemap"
+      },
+      {
+        "name": "免费域名changeip",
+        "link": "https://www.changeip.com/",
+        "icon": "fa-solid fa-satellite-dish"
+      },
+      {
+        "name": "免费域名dnsexit",
+        "link": "https://dnsexit.com/",
+        "icon": "fa-solid fa-users"
+      },
+      {
+        "name": "免费域名gname",
+        "link": "https://www.gname.com/",
+        "icon": "fa-solid fa-users"
+      },
+      {
+        "name": "DNS查找nslookup",
+        "link": "https://www.nslookup.io/",
+        "icon": "fa-solid fa-arrows-rotate"
+      },
+      {
+        "name": "ping0",
+        "link": "https://ping0.cc/",
+        "icon": "fa-solid fa-fingerprint"
+      },
+      {
+        "name": "L53免费域名",
+        "link": "https://customer.l53.net/",
+        "icon": "fa-solid fa-fingerprint"
+      },
+      {
+        "name": "PDF在线工具",
+        "link": "https://tools.pdf24.org/",
+        "icon": "fa-solid fa-file-pdf"
+      },
+      {
+        "name": "free-proxy",
+        "link": "http://free-proxy.cz/en/",
+        "icon": "fa-brands fa-internet-explorer"
+      },
+      {
+        "name": "在线代理croxyproxy",
+        "link": "https://www.croxyproxy.rocks/_zh/",
+        "icon": "fa-solid fa-unlock"
+      },
+      {
+        "name": "微信Markdown编辑器",
+        "link": "https://doocs.github.io/md/",
+        "icon": "fa-regular fa-edit"
+      },
+      {
+        "name": "proxysite",
+        "link": "https://www.proxysite.com/",
+        "icon": "fa-solid fa-unlock"
+      },
+      {
+        "name": "serv00",
+        "link": "https://www.serv00.com/",
+        "icon": "fa-solid fa-server"
+      },
+      {
+        "name": "colocrossing云服务vps",
+        "link": "https://www.colocrossing.com/",
+        "icon": "fa-solid fa-server"
+      },
+      {
+        "name": "PicGo",
+        "link": "https://github.com/Molunerfinn/PicGo",
+        "icon": "fa-solid fa-cloud-arrow-up"
+      },
+      {
+        "name": "SM.MS",
+        "link": "https://smms.app/",
+        "icon": "fa-solid fa-image"
+      },
+      {
+        "name": "FreeImageHost",
+        "link": "https://freeimage.host/",
+        "icon": "fa-solid fa-photo-film"
+      },
+      {
+        "name": "cobalt",
+        "link": "https://cobalt.tools/",
+        "icon": "fa-brands fa-youtube"
+      },
+      {
+        "name": "AI鉴定isthisai",
+        "link": "https://isthisai.com/",
+        "icon": "fa-solid fa-code"
+      },
+      {
+        "name": "tinywow",
+        "link": "https://tinywow.com/",
+        "icon": "fa-brands fa-free-code-camp"
+      },
+      {
+        "name": "付费墙",
+        "link": "https://paywallbuster.com/",
+        "icon": "fa-solid fa-key"
+      },
+      {
+        "name": "PaywallHub",
+        "link": "https://paywallhub.ndjp.net/",
+        "icon": "fa-solid fa-unlock"
+      },
+      {
+        "name": "fmhy",
+        "link": "https://fmhy.net/",
+        "icon": "fa-regular fa-folder-open"
+      },
+      {
+        "name": "remove",
+        "link": "https://www.remove.bg/",
+        "icon": "fa-solid fa-image-portrait"
+      },
+      {
+        "name": "picwish",
+        "link": "https://picwish.com/",
+        "icon": "fa-regular fa-image"
+      },
+      {
+        "name": "免费域名Stackryze",
+        "link": "https://domain.stackryze.com/",
+        "icon": "fa-solid fa-landmark-dome"
+      },
+      {
+        "name": "免费域名HiDNS",
+        "link": "https://www.hidoha.net/",
+        "icon": "fa-solid fa-fingerprint"
+      },
+      {
+        "name": "pixabay",
+        "link": "https://pixabay.com/",
+        "icon": "fa-brands fa-pix"
+      },
+      {
+        "name": "InfinityFree",
+        "link": "https://www.infinityfree.com/",
+        "icon": "fa-solid fa-infinity"
+      },
+      {
+        "name": "anyvoice",
+        "link": "https://anyvoice.net/",
+        "icon": "fa-solid fa-microphone"
+      },
+      {
+        "name": "fish.audio",
+        "link": "https://fish.audio/",
+        "icon": "fa-solid fa-fish"
+      },
+      {
+        "name": "noizai",
+        "link": "https://noiz.ai/",
+        "icon": "fa-solid fa-circle-notch"
+      },
+      {
+        "name": "Design Radar设计灵感导航",
+        "link": "https://design.ndjp.net/",
+        "icon": "fa-solid fa-file-audio"
+      },
+      {
+        "name": "desec免费域名",
+        "link": "https://desec.io/",
+        "icon": "fa-solid fa-anchor"
+      },
+      {
+        "name": "lovable网站生成",
+        "link": "https://lovable.dev/",
+        "icon": "fa-solid fa-shield-heart"
+      },
+      {
+        "name": "ndjp免费域名",
+        "link": "https://ndjp.net/",
+        "icon": "fa-solid fa-globe"
+      },
+      {
+        "name": "dynu免费域名",
+        "link": "https://www.dynu.com/",
+        "icon": "fa-solid fa-globe"
+      },
+      {
+        "name": "zone免费域名",
+        "link": "https://zone.id/",
+        "icon": "fa-solid fa-id-card-clip"
+      },
+      {
+        "name": "dnshe免费域名",
+        "link": "https://my.dnshe.com/",
+        "icon": "fa-solid fa-id-card-clip"
+      },
+      {
+        "name": "x10hosting免费托管",
+        "link": "https://x10hosting.com/",
+        "icon": "fa-solid fa-ghost"
+      },
+      {
+        "name": "nodeloc社区",
+        "link": "https://www.nodeloc.com/",
+        "icon": "fa-brands fa-hashnode"
+      },
+      {
+        "name": "same复制网站",
+        "link": "https://same.new/",
+        "icon": "fa-solid fa-copy"
+      },
+      {
+        "name": "KataBump免费域名",
+        "link": "https://katabump.com/",
+        "icon": "fa-solid fa-cloud"
+      },
+      {
+        "name": "免费域名zoneabc",
+        "link": "https://zoneabc.net/",
+        "icon": "fa-solid fa-cloud"
+      },
+      {
+        "name": "免费域名gv.uy",
+        "link": "https://nic.gv.uy/",
+        "icon": "fa-solid fa-cloud"
+      },
+      {
+        "name": "免费域名isroot",
+        "link": "https://isroot.in/",
+        "icon": "fa-solid fa-cloud"
+      },
+      {
+        "name": "subeasy字幕",
+        "link": "https://www.subeasy.ai/zh-CN",
+        "icon": "fa-solid fa-closed-captioning"
+      },
+      {
+        "name": "知识卡片",
+        "link": "https://cardify.godsbee.com/",
+        "icon": "fa-solid fa-credit-card"
+      },
+      {
+        "name": "webhostmost网站托管",
+        "link": "https://www.webhostmost.com/",
+        "icon": "fa-solid fa-web-awesome"
+      },
+      {
+        "name": "edgeone",
+        "link": "https://edgeone.ai/",
+        "icon": "fa-brands fa-edge"
+      },
+      {
+        "name": "cyberpanel免费VPN",
+        "link": "https://cyberpanel.net/",
+        "icon": "fa-solid fa-graduation-cap"
+      },
+      {
+        "name": "Stormkit",
+        "link": "https://www.stormkit.io/",
+        "icon": "fa-solid fa-cloud"
+      }
+    ]
+  },
+  {
+    "id": "tech-news",
+    "title": "科技资讯",
+    "items": [
+      {
+        "name": "TechCrunch",
+        "link": "https://www.techcrunch.com",
+        "icon": "fa-solid fa-newspaper"
+      },
+      {
+        "name": "Wired",
+        "link": "https://www.wired.com",
+        "icon": "fa-solid fa-bolt"
+      },
+      {
+        "name": "The Verge",
+        "link": "https://www.theverge.com",
+        "icon": "fa-solid fa-laptop"
+      },
+      {
+        "name": "Ars Technica",
+        "link": "https://arstechnica.com",
+        "icon": "fa-solid fa-rocket"
+      },
+      {
+        "name": "Engadget",
+        "link": "https://www.engadget.com",
+        "icon": "fa-solid fa-mobile-screen"
+      },
+      {
+        "name": "科技日报",
+        "link": "https://scitechdaily.com/",
+        "icon": "fa-solid fa-microscope"
+      },
+      {
+        "name": "TechRadar",
+        "link": "https://techradar.com",
+        "icon": "fa-solid fa-satellite"
+      },
+      {
+        "name": "科技博客",
+        "link": "https://b.186404.xyz/",
+        "icon": "fa-solid fa-blog"
+      },
+      {
+        "name": "cnbeta",
+        "link": "https://www.cnbeta.com.tw/",
+        "icon": "fa-solid fa-circle-info"
+      }
+    ]
+  },
+  {
+    "id": "cloud-storage",
+    "title": "云存储",
+    "items": [
+      {
+        "name": "Dropbox",
+        "link": "https://www.dropbox.com",
+        "icon": "fa-brands fa-dropbox"
+      },
+      {
+        "name": "Google Drive",
+        "link": "https://drive.google.com",
+        "icon": "fa-brands fa-google-drive"
+      },
+      {
+        "name": "OneDrive",
+        "link": "https://onedrive.live.com",
+        "icon": "fa-brands fa-microsoft"
+      },
+      {
+        "name": "Box",
+        "link": "https://www.box.com",
+        "icon": "fa-solid fa-box"
+      },
+      {
+        "name": "MediaFire",
+        "link": "https://www.mediafire.com",
+        "icon": "fa-solid fa-file"
+      },
+      {
+        "name": "MEGA",
+        "link": "https://mega.nz",
+        "icon": "fa-solid fa-cloud-arrow-up"
+      },
+      {
+        "name": "PikPak",
+        "link": "https://mypikpak.com/",
+        "icon": "fa-solid fa-cloud"
+      }
+    ]
+  },
+  {
+    "id": "email",
+    "title": "电子邮箱",
+    "items": [
+      {
+        "name": "Zoho Mail企业邮箱",
+        "link": "https://www.zoho.com/mail/",
+        "icon": "fa-solid fa-envelope"
+      },
+      {
+        "name": "Outlook",
+        "link": "https://outlook.live.com",
+        "icon": "fa-brands fa-microsoft"
+      },
+      {
+        "name": "cock邮箱",
+        "link": "https://cock.li/",
+        "icon": "fa-solid fa-envelope-open"
+      },
+      {
+        "name": "disroot邮箱",
+        "link": "https://disroot.org/",
+        "icon": "fa-solid fa-envelope-circle-check"
+      },
+      {
+        "name": "ProtonMail",
+        "link": "https://www.protonmail.com",
+        "icon": "fa-solid fa-shield-halved"
+      },
+      {
+        "name": "tinkmail企业邮箱",
+        "link": "https://tinkmail.me/",
+        "icon": "fa-brands fa-qq"
+      },
+      {
+        "name": "Cloudflare临时邮件",
+        "link": "https://em.bjedu.tech/",
+        "icon": "fa-solid fa-at"
+      },
+      {
+        "name": "临时教育邮箱",
+        "link": "https://edumail.su/",
+        "icon": "fa-solid fa-envelopes-bulk"
+      }
+    ]
+  }
+]
