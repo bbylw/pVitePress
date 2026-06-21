@@ -8,25 +8,6 @@
   --vp-home-hero-name-background: linear-gradient(135deg, #ff9000 0%, #ff5500 100%);
 }
 
-/* Custom styles for our navigation grid page */
-.category-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin: 2.5rem 0 1.2rem;
-  padding-left: 0.8rem;
-  border-left: 4px solid var(--vp-c-brand-1);
-  color: var(--vp-c-text-1);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  display: flex;
-  align-items: center;
-}
-
-/* Search Box wrapper */
-.search-wrapper {
-  margin: 1.5rem 0 2rem;
-}
-
 /* Glassmorphism theme values for our cards */
 .dark {
   --vp-c-bg-soft: #121212;

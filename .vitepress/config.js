@@ -47,7 +47,7 @@ export default defineConfig({
       }
     },
     socialLinks: [
-      { icon: 'github', link: 'https://github.com' }
+      { icon: 'github', link: 'https://github.com/bbylw/pVitePress' }
     ],
     footer: {
       message: 'Released under the MIT License.',

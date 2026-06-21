@@ -1,6 +1,17 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { pinyin } from 'pinyin-pro'
 import navData from '../navData.json'
+
+// 预生成拼音索引（模块加载时一次性计算，支持全拼与首字母搜索）
+const indexedNavData = navData.map(category => ({
+  ...category,
+  items: category.items.map(item => ({
+    ...item,
+    pinyinFull: pinyin(item.name, { toneType: 'none' }).toLowerCase(),
+    pinyinInitials: pinyin(item.name, { pattern: 'first', toneType: 'none' }).toLowerCase()
+  }))
+}))
 
 // Search state
 const searchQuery = ref('')
@@ -25,7 +36,7 @@ const scrollToSection = (id, event) => {
   const targetElement = document.getElementById(id)
   if (targetElement) {
     targetElement.scrollIntoView({ behavior: 'smooth' })
-    const newUrl = window.location.protocol + '//' + window.location.host + window.location.pathname + '#' + id
+    const newUrl = new URL('#' + id, window.location.href).href
     window.history.pushState({ path: newUrl }, '', newUrl)
   }
 }
@@ -84,15 +95,17 @@ onUnmounted(() => {
   if (observer) observer.disconnect()
 })
 
-// Filter items based on search query
+// Filter items based on search query (name / link / pinyin full / pinyin initials)
 const filteredNavData = computed(() => {
   const query = searchQuery.value.trim().toLowerCase()
-  if (!query) return navData
+  if (!query) return indexedNavData
 
-  return navData.map(category => {
-    const filteredItems = category.items.filter(item => 
-      item.name.toLowerCase().includes(query) || 
-      item.link.toLowerCase().includes(query)
+  return indexedNavData.map(category => {
+    const filteredItems = category.items.filter(item =>
+      item.name.toLowerCase().includes(query) ||
+      item.link.toLowerCase().includes(query) ||
+      item.pinyinFull.includes(query) ||
+      item.pinyinInitials.includes(query)
     )
     return {
       ...category,
@@ -143,10 +156,11 @@ const clearSearch = () => {
             ref="searchInputRef"
             v-model="searchQuery"
             type="text"
-            placeholder="搜索导航站点... (按 / 键自动聚焦)"
+            placeholder="搜索导航站点，支持拼音... (按 / 键自动聚焦)"
             class="search-input"
+            aria-label="搜索导航站点"
           />
-          <button v-if="searchQuery" @click="clearSearch" class="clear-btn" aria-label="Clear search">
+          <button v-if="searchQuery" @click="clearSearch" class="clear-btn" aria-label="清除搜索">
             <i class="fa-solid fa-xmark"></i>
           </button>
         </div>
@@ -173,8 +187,8 @@ const clearSearch = () => {
           <h2 class="category-title">{{ category.title }}</h2>
           <div class="link-grid">
             <div 
-              v-for="item in category.items" 
-              :key="item.link" 
+              v-for="(item, index) in category.items" 
+              :key="`${category.id}-${index}`" 
               class="link-card"
             >
               <a :href="item.link" target="_blank" rel="noopener noreferrer" :aria-label="item.name"></a>

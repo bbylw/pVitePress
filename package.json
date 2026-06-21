@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "WebNav Hub migrated to VitePress",
   "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "dev": "vitepress dev",
     "build": "vitepress build",
@@ -11,5 +15,8 @@
   "devDependencies": {
     "vitepress": "^1.1.0",
     "vue": "^3.4.21"
+  },
+  "dependencies": {
+    "pinyin-pro": "^3.28.1"
   }
 }
