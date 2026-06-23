@@ -154,14 +154,14 @@
         "icon": "fa-solid fa-robot"
       },
       {
-        "name": "anyrouter",
-        "link": "https://anyrouter.top/",
-        "icon": "fa-solid fa-robot"
+        "name": "kimchi",
+        "link": "https://kimchi.dev/",
+        "icon": "fa-solid fa-bowl-food"
       },
       {
-        "name": "codemirror",
-        "link": "https://api.codemirror.codes/",
-        "icon": "fa-brands fa-codepen"
+        "name": "freeinference",
+        "link": "https://freeinference.org/",
+        "icon": "fa-solid fa-brain"
       },
       {
         "name": "x.ai",
