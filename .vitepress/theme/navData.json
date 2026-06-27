@@ -267,7 +267,7 @@
   },
   {
     "id": "social",
-    "title": "社交媒体",
+    "title": "托管社交",
     "items": [
       {
         "name": "Facebook",
@@ -300,9 +300,9 @@
         "icon": "fa-solid fa-d"
       },
       {
-        "name": "railway",
-        "link": "https://railway.com/",
-        "icon": "fa-solid fa-archway"
+        "name": "surge",
+        "link": "https://surge.sh/",
+        "icon": "fa-brands fa-css"
       },
       {
         "name": "vercel",

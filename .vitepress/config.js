@@ -18,7 +18,7 @@ export default defineConfig({
         text: '导航目录',
         items: [
           { text: 'Ai搜索', link: '#ai-search' },
-          { text: '社交媒体', link: '#social' },
+          { text: '托管社交', link: '#social' },
           { text: '实用工具', link: '#tools' },
           { text: '科技资讯', link: '#tech-news' },
           { text: '云存储', link: '#cloud-storage' },
