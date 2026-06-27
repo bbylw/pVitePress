@@ -5,7 +5,7 @@ export default defineConfig({
   description: 'A curated collection of useful web navigation links.',
   cleanUrls: true,
   head: [
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.0/css/all.min.css' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]
   ],
   themeConfig: {
