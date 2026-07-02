@@ -124,9 +124,9 @@
         "icon": "fa-solid fa-group-arrows-rotate"
       },
       {
-        "name": "medscape",
-        "link": "https://www.medscape.com/",
-        "icon": "fa-solid fa-stethoscope"
+        "name": "skills",
+        "link": "https://www.skills.sh/",
+        "icon": "fa-solid fa-key"
       },
       {
         "name": "ollama",
