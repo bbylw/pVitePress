@@ -779,6 +779,16 @@
         "name": "Stormkit",
         "link": "https://www.stormkit.io/",
         "icon": "fa-solid fa-cloud"
+      },
+      {
+        "name": "1984.hosting免费DNS",
+        "link": "https://1984.hosting/",
+        "icon": "fa-solid fa-network-wired"
+      },
+      {
+        "name": "int.yt免费域名",
+        "link": "https://dash.int.yt/",
+        "icon": "fa-solid fa-globe"
       }
     ]
   },
