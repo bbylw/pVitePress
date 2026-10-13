@@ -358,6 +358,11 @@
         "name": "电影导航",
         "link": "https://movn.ndjp.net/",
         "icon": "fa-solid fa-tv"
+      },
+      {
+        "name": "追剧导航",
+        "link": "https://zhuiju.ndjp.net/",
+        "icon": "fa-solid fa-film"
       }
     ]
   },
