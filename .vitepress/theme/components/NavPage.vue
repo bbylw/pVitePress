@@ -20,6 +20,25 @@ const searchInputRef = ref(null)
 // Navigation active state
 const activeHash = ref('')
 
+// 点击导航触发平滑滚动期间，屏蔽 scroll spy / hashchange 的二次滚动，
+// 否则多个滚动动画互相打断，会产生明显的"抽搐感"
+let clickScrolling = false
+let clickScrollTimer = null
+
+const beginClickScroll = () => {
+  clickScrolling = true
+  clearTimeout(clickScrollTimer)
+  clickScrollTimer = setTimeout(() => {
+    clickScrolling = false
+  }, 800)
+}
+
+const settleClickScroll = () => {
+  if (!clickScrolling) return
+  clickScrolling = false
+  clearTimeout(clickScrollTimer)
+}
+
 // Focus search input on "/" key press
 const handleKeyDown = (e) => {
   if (e.key === '/' && document.activeElement !== searchInputRef.value) {
@@ -31,10 +50,13 @@ const handleKeyDown = (e) => {
 // Scroll to section smoothly
 const scrollToSection = (id, event) => {
   if (event) event.preventDefault()
-  
+
   activeHash.value = '#' + id
   const targetElement = document.getElementById(id)
   if (targetElement) {
+    beginClickScroll()
+    // scrollIntoView 滚动的是文档，scrollend 在 window 上触发；不支持时由定时器兜底
+    window.addEventListener('scrollend', settleClickScroll, { once: true })
     targetElement.scrollIntoView({ behavior: 'smooth' })
     const newUrl = new URL('#' + id, window.location.href).href
     window.history.pushState({ path: newUrl }, '', newUrl)
@@ -43,6 +65,7 @@ const scrollToSection = (id, event) => {
 
 // Handle initial hash on load
 const handleHashChange = () => {
+  if (clickScrolling) return // 点击导航引发的 hash 变化不再重复滚动
   const hash = window.location.hash
   if (hash) {
     activeHash.value = hash
@@ -68,7 +91,8 @@ const setupIntersectionObserver = () => {
   
   observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      // 点击触发的平滑滚动途中不更新高亮，避免依次跳过中间分类造成闪烁
+      if (entry.isIntersecting && !clickScrolling) {
         activeHash.value = '#' + entry.target.id
       }
     })
@@ -92,6 +116,8 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('keydown', handleKeyDown)
   window.removeEventListener('hashchange', handleHashChange)
+  window.removeEventListener('scrollend', settleClickScroll)
+  clearTimeout(clickScrollTimer)
   if (observer) observer.disconnect()
 })
 
@@ -132,11 +158,13 @@ const clearSearch = () => {
     </header>
 
     <!-- Navigation (Sticky) -->
-    <nav class="sticky-nav">
+    <!-- vp-raw: 让 VitePress 路由放弃接管锚点链接。路由的点击劫持会瞬时跳转
+         (scrollTo) 并派发合成 hashchange，与本组件的平滑滚动互相打断，产生"抽搐感" -->
+    <nav class="sticky-nav vp-raw">
       <ul>
         <li v-for="category in navData" :key="category.id">
-          <a 
-            :href="'#' + category.id" 
+          <a
+            :href="'#' + category.id"
             :class="{ active: activeHash === '#' + category.id }"
             @click="scrollToSection(category.id, $event)"
           >
