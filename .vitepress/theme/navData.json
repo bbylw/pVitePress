@@ -804,6 +804,11 @@
         "name": "PinMe",
         "link": "https://pinme.eth.limo/",
         "icon": "fa-solid fa-thumbtack"
+      },
+      {
+        "name": "openverse",
+        "link": "https://openverse.org/",
+        "icon": "fa-brands fa-creative-commons"
       }
     ]
   },
