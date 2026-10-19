@@ -262,6 +262,11 @@
         "name": "bolt.new",
         "link": "https://bolt.new/",
         "icon": "fa-solid fa-bolt"
+      },
+      {
+        "name": "Artificial Analysis",
+        "link": "https://artificialanalysis.ai",
+        "icon": "fa-solid fa-chart-line"
       }
     ]
   },
