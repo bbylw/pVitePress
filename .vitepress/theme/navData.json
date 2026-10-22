@@ -267,6 +267,11 @@
         "name": "Artificial Analysis",
         "link": "https://artificialanalysis.ai",
         "icon": "fa-solid fa-chart-line"
+      },
+      {
+        "name": "perchai.app",
+        "link": "https://www.perchai.app/",
+        "icon": "fa-solid fa-crow"
       }
     ]
   },
