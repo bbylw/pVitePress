@@ -285,9 +285,9 @@
         "icon": "fa-brands fa-facebook"
       },
       {
-        "name": "Twitter",
-        "link": "https://x.com/",
-        "icon": "fa-brands fa-twitter"
+        "name": "F-Droid",
+        "link": "https://f-droid.org/",
+        "icon": "fa-brands fa-android"
       },
       {
         "name": "推特视频下载",
@@ -330,9 +330,9 @@
         "icon": "fa-solid fa-share-from-square"
       },
       {
-        "name": "爆米花视频",
-        "link": "https://goingbus.com/",
-        "icon": "fa-brands fa-n"
+        "name": "apkmirror",
+        "link": "https://www.apkmirror.com/",
+        "icon": "fa-brands fa-android"
       },
       {
         "name": "Reddit",
