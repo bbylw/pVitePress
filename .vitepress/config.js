@@ -1,9 +1,13 @@
 import { defineConfig } from 'vitepress'
+import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
   title: 'WebNav Hub',
   description: 'A curated collection of useful web navigation links.',
   cleanUrls: true,
+  vite: {
+    publicDir: fileURLToPath(new URL('./public', import.meta.url))
+  },
   head: [
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css' }],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
