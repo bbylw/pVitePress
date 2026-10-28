@@ -4,6 +4,7 @@
   "description": "WebNav Hub migrated to VitePress",
   "type": "module",
   "license": "MIT",
+  "packageManager": "bun@1.4.4",
   "engines": {
     "node": ">=20"
   },

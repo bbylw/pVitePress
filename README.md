@@ -39,27 +39,28 @@ pVitePress/
 ## 🚀 快速开始
 
 ### 1. 安装依赖
-确保本地已安装 Node.js 环境，在项目根目录下运行以下命令安装必要依赖：
+在项目根目录下运行以下命令安装依赖：
 ```bash
-npm install
+bun install
 ```
+*(亦可使用 `npm install`)*
 
 ### 2. 启动本地开发服务器
 运行开发命令，默认会在 `http://localhost:5173/` 启动服务：
 ```bash
-npm run dev
+bun run dev
 ```
 
 ### 3. 构建静态生产包
 执行打包编译命令，编译生成的静态 HTML 和 assets 将会输出到 `.vitepress/dist/` 目录：
 ```bash
-npm run build
+bun run build
 ```
 
 ### 4. 本地预览静态包
 在打包完成后，可以使用以下命令在本地启动服务预览打包好的生产静态资源：
 ```bash
-npm run preview
+bun run preview
 ```
 
 ---
@@ -218,30 +219,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0 # 获取完整提交记录，保证 VitePress 页面最后修改时间准确
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          node-version: 20
-          cache: npm
+          bun-version: latest
 
       - name: Install dependencies
-        run: npm ci
+        run: bun install --frozen-lockfile
 
       - name: Build with VitePress
-        run: npm run build
+        run: bun run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: .vitepress/dist
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
 ```
 
 #### 步骤三：在 GitHub 启用 Actions 部署
