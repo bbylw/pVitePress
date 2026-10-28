@@ -1,6 +1,5 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { withBase } from 'vitepress'
 import { pinyin } from 'pinyin-pro'
 import navData from '../navData.json'
 
@@ -155,10 +154,7 @@ const clearSearch = () => {
   <div class="original-body">
     <!-- Header -->
     <header>
-      <div class="header-content">
-        <img :src="withBase('/favicon.svg')" alt="Logo" class="header-logo" width="38" height="38" />
-        <h1>WebNav Hub</h1>
-      </div>
+      <h1>WebNav Hub</h1>
     </header>
 
     <!-- Navigation (Sticky) -->
@@ -262,32 +258,12 @@ header {
   text-align: center;
 }
 
-.header-content {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-}
-
-.header-logo {
-  width: 38px;
-  height: 38px;
-  border-radius: 9px;
-  box-shadow: 0 4px 12px rgba(255, 144, 0, 0.25);
-  transition: transform 0.3s ease;
-}
-
-.header-logo:hover {
-  transform: rotate(15deg) scale(1.05);
-}
-
 header h1 {
   font-size: 2rem;
   font-weight: bold;
   color: #ff9000;
   margin: 0;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
 }
 
 .sticky-nav {
@@ -631,11 +607,6 @@ footer p {
 
   header h1 {
     font-size: 1.6rem;
-  }
-
-  .header-logo {
-    width: 32px;
-    height: 32px;
   }
 
   .sticky-nav li {

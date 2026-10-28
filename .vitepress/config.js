@@ -6,11 +6,9 @@ export default defineConfig({
   cleanUrls: true,
   head: [
     ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css' }],
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
-    ['link', { rel: 'alternate icon', href: '/favicon.svg' }]
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
   ],
   themeConfig: {
-    logo: '/favicon.svg',
     nav: [
       { text: '主页', link: '/' },
       { text: '关于', link: '/about' }

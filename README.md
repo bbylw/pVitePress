@@ -20,7 +20,7 @@ pVitePress/
 ├── .vitepress/
 │   ├── config.js               # VitePress 全局配置文件
 │   ├── public/
-│   │   └── logo.svg            # 站点 Favicon 与 Logo 文件
+│   │   └── favicon.svg         # 站点 Favicon 图标文件
 │   └── theme/
 │       ├── components/
 │       │   ├── NavLinks.vue    # (备用) 默认文档样式导航组件
