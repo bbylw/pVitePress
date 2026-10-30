@@ -811,6 +811,11 @@
         "icon": "fa-solid fa-globe"
       },
       {
+        "name": "devs.surf 免费域名",
+        "link": "https://devs.surf/",
+        "icon": "fa-solid fa-water"
+      },
+      {
         "name": "PinMe",
         "link": "https://pinme.eth.limo/",
         "icon": "fa-solid fa-thumbtack"
