@@ -80,7 +80,7 @@
       },
       {
         "name": "labs.google",
-        "link": "https://labs.google/fx/zh",
+        "link": "https://labs.google/",
         "icon": "fa-brands fa-google-plus"
       },
       {
@@ -104,8 +104,8 @@
         "icon": "fa-solid fa-microchip"
       },
       {
-        "name": "modal",
-        "link": "https://modal.com/",
+        "name": "腾讯元宝",
+        "link": "https://yuanbao.tencent.com/",
         "icon": "fa-solid fa-robot"
       },
       {
@@ -161,11 +161,11 @@
       {
         "name": "freeinference",
         "link": "https://freeinference.org/",
-        "icon": "fa-solid fa-brain"
+        "icon": "fa-brands fa-codepen"
       },
       {
-        "name": "x.ai",
-        "link": "https://x.ai/",
+        "name": "grok",
+        "link": "https://grok.com/",
         "icon": "fa-brands fa-x-twitter"
       },
       {
@@ -209,14 +209,14 @@
         "icon": "fa-solid fa-code-branch"
       },
       {
-        "name": "kiro.dev",
-        "link": "https://kiro.dev/",
-        "icon": "fa-solid fa-code"
+        "name": "Google Flow",
+        "link": "https://flow.google.com/",
+        "icon": "fa-brands fa-google-plus"
       },
       {
         "name": "404s.design",
         "link": "https://www.404s.design/",
-        "icon": "fa-solid fa-palette"
+        "icon": "fa-solid fa-code"
       },
       {
         "name": "streamlake.ai",
@@ -265,7 +265,7 @@
       },
       {
         "name": "Artificial Analysis",
-        "link": "https://artificialanalysis.ai",
+        "link": "https://artificialanalysis.ai/",
         "icon": "fa-solid fa-chart-line"
       },
       {
@@ -280,9 +280,9 @@
     "title": "托管社交",
     "items": [
       {
-        "name": "Facebook",
-        "link": "https://www.facebook.com",
-        "icon": "fa-brands fa-facebook"
+        "name": "wasmer边缘计算",
+        "link": "https://wasmer.io/",
+        "icon": "fa-regular fa-cloud"
       },
       {
         "name": "F-Droid",
@@ -363,6 +363,21 @@
         "name": "suno",
         "link": "https://suno.com/",
         "icon": "fa-solid fa-music"
+      },
+      {
+        "name": "Appwrite",
+        "link": "https://appwrite.io/",
+        "icon": "fa-solid fa-server"
+      },
+      {
+        "name": "Neon",
+        "link": "https://neon.tech/",
+        "icon": "fa-solid fa-database"
+      },
+      {
+        "name": "Turso",
+        "link": "https://turso.tech/",
+        "icon": "fa-solid fa-database"
       },
       {
         "name": "电影导航",
@@ -576,9 +591,9 @@
         "icon": "fa-solid fa-file-pdf"
       },
       {
-        "name": "不想看片影视导航",
-        "link": "https://bxkp.org/",
-        "icon": "fa-solid fa-clapperboard"
+        "name": "supabase免费数据库",
+        "link": "https://supabase.com/",
+        "icon": "fa-brands fa-internet-explorer"
       },
       {
         "name": "在线代理croxyproxy",
@@ -796,7 +811,7 @@
         "icon": "fa-solid fa-cloud"
       },
       {
-        "name": "1984.hosting免费DNS",
+        "name": "1984免费DNS托管",
         "link": "https://1984.hosting/",
         "icon": "fa-solid fa-network-wired"
       },
@@ -826,9 +841,14 @@
         "icon": "fa-solid fa-thumbtack"
       },
       {
-        "name": "openverse",
+        "name": "Openverse",
         "link": "https://openverse.org/",
         "icon": "fa-brands fa-creative-commons"
+      },
+      {
+        "name": "黑客书架",
+        "link": "https://hackerbooks.qiaomu.ai/",
+        "icon": "fa-solid fa-book-bookmark"
       }
     ]
   },

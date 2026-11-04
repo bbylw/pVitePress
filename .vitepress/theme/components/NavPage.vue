@@ -6,8 +6,9 @@ import navData from '../navData.json'
 // 预生成拼音索引（模块加载时一次性计算，支持全拼与首字母搜索）
 const indexedNavData = navData.map(category => ({
   ...category,
-  items: category.items.map(item => ({
+  items: (category.items || category.links || []).map(item => ({
     ...item,
+    link: item.link || item.url,
     pinyinFull: pinyin(item.name, { toneType: 'none' }).toLowerCase(),
     pinyinInitials: pinyin(item.name, { pattern: 'first', toneType: 'none' }).toLowerCase()
   }))
