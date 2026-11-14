@@ -224,8 +224,8 @@
         "icon": "fa-solid fa-code"
       },
       {
-        "name": "codebuff",
-        "link": "https://www.codebuff.com/",
+        "name": "freebuff",
+        "link": "https://freebuff.com/",
         "icon": "fa-solid fa-robot"
       },
       {
@@ -234,7 +234,7 @@
         "icon": "fa-solid fa-code"
       },
       {
-        "name": "deepai",
+        "name": "DeepAI",
         "link": "https://deepai.org/",
         "icon": "fa-solid fa-brain"
       },
