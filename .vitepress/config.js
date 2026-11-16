@@ -2,14 +2,35 @@ import { defineConfig } from 'vitepress'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
+  lang: 'zh-CN',
   title: 'WebNav Hub',
   description: 'A curated collection of useful web navigation links.',
   cleanUrls: true,
   vite: {
     publicDir: fileURLToPath(new URL('./public', import.meta.url))
   },
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => tag === 'search'
+      }
+    }
+  },
   head: [
-    ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css' }],
+    ['meta', { name: 'color-scheme', content: 'light dark' }],
+    ['meta', { name: 'text-scale', content: 'scale' }],
+    ['meta', { name: 'referrer', content: 'strict-origin-when-cross-origin' }],
+    ['link', { rel: 'preconnect', href: 'https://cdn.jsdelivr.net', crossorigin: '' }],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.1/css/all.min.css',
+        integrity: 'sha384-qrALq7+6jBOZIQsNnT6xGkMDru64qD6uTlDra39xrt2SoXl4pO3FX6Roz/RpR/BS',
+        crossorigin: 'anonymous',
+        referrerpolicy: 'no-referrer'
+      }
+    ],
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }]
   ],
   themeConfig: {
