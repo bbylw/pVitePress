@@ -7,9 +7,26 @@
 * ⚡ **极速热更新与加载**：底层由 Vite 驱动，无论是本地开发还是线上访问都具有秒级响应速度。
 * 🎨 **1:1 原生 UI 还原**：完全保留了原网页的黑色页眉、深黑底色 (`#0d0d0d`)、深灰卡片 (`#1a1a1a`) 以及代表性的橙色高亮设计。
 * 🔍 **智能实时检索**：集成了无缝拼音和关键词本地搜索功能，输入字符瞬间过滤匹配的卡片并显示结果数量。
-* ⌨️ **快捷键焦点**：在页面任意位置按下键盘的 `/` 键，搜索框将自动获得焦点，优化使用效率。
-* ⚓ **粘性导航与滚动 spy**：顶部导航栏自动贴顶，并利用 `IntersectionObserver` 监听页面滚动，根据用户当前所处的分类自动点亮对应的导航项。
+* ⌨️ **快捷键焦点**：在页面任意位置按下键盘的 `/` 键（兼容中文/IME 输入法组合态保护），搜索框将自动获得焦点，优化使用效率。
+* ⚓ **粘性导航与原生 Scrollspy**：顶部导航栏自动贴顶，优先使用原生 CSS `scroll-target-group: auto` 与 `:target-current` 同步当前分类高亮与 `aria-current`，并在不支持的浏览器平滑回退至 `IntersectionObserver`。
 * 📂 **数据解耦管理**：将原 HTML 里繁杂的链接抽取至独立的 JSON 文件中，极大简化了维护和更新工作。
+* 🛡️ **遵循 Modern Web Guidance 标准**：项目已引入 [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) 指南，在保持 UI 不变的前提下全面优化了语义化 HTML、无障碍访问、外部子资源安全（SRI / CORS / Referrer Policy）、系统字号/深色模式适配及离线屏幕外渲染性能。
+
+---
+
+## ✨ Modern Web Guidance 优化实践
+
+本项目依据 [GoogleChrome/modern-web-guidance](https://github.com/GoogleChrome/modern-web-guidance) 完成了全面标准化改造（视觉 UI 保持 1:1 不变）：
+
+- **语义与无障碍（`html`、`accessibility`、`forms`、`icons`）**：声明 `lang="zh-CN"`、提供跳转主内容链接（`.skip-link`）、使用 `<search>` 地标与显式 `<label>`、`<ul role="list">` 卡片列表、防抖 `aria-live="polite"` 搜索结果播报、装饰图标 `aria-hidden="true"`、`24×24px` 最小交互热区，以及完整 `:focus-visible` 与 `forced-colors: active` 高对比度支持。
+- **原生导航与滚动体验（`scrollspy`、`scroll-completion-effects`、`state-aware-sticky-headers`）**：采用 CSS `scroll-target-group` + `:is(:target-current, .active)` 联动 `aria-current`，结合 `ResizeObserver` 动态维护 `scroll-padding-top`，并在 `scrollIntoView()` 完成后安全聚焦目标分类。
+- **渲染与动效性能（`defer-rendering-heavy-content`、`motion`、`individual-transform-properties`、`performance`）**：对首屏外卡片网格启用 `content-visibility: auto` 与 `contain-intrinsic-block-size`，使用独立变换属性（`translate` / `scale`）并将空间动效置于 `@media (prefers-reduced-motion: no-preference)` 内，同时为 CDN 图标资源配置 `preconnect`。
+- **安全与主题适配（`secure-external-subresources`、`dark-mode`、`respect-os-text-scale`）**：为 FontAwesome 7.3.1 CDN 样式配置 SHA-384 SRI `integrity`、`crossorigin="anonymous"` 与 `referrerpolicy="no-referrer"`，并声明 `<meta name="color-scheme" content="light dark">` 与 `<meta name="text-scale" content="scale">` 以原生适配浏览器 UI 与系统字体缩放。
+
+可使用以下命令在本地复检：
+```bash
+pnpx modern-web-guidance@latest legacy-scan .vitepress --json
+```
 
 ---
 
