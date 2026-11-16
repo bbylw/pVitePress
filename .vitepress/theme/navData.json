@@ -330,6 +330,11 @@
         "icon": "fa-brands fa-n"
       },
       {
+        "name": "cloudzyro",
+        "link": "https://cloudzyro.com/",
+        "icon": "fa-solid fa-cloud"
+      },
+      {
         "name": "savefrom",
         "link": "https://zh.savefrom.net/",
         "icon": "fa-solid fa-share-from-square"
