@@ -856,6 +856,11 @@
         "icon": "fa-solid fa-thumbtack"
       },
       {
+        "name": "sms24免费接码",
+        "link": "https://sms24.me/",
+        "icon": "fa-solid fa-comment-sms"
+      },
+      {
         "name": "Openverse",
         "link": "https://openverse.org/",
         "icon": "fa-brands fa-creative-commons"
